@@ -12,6 +12,6 @@ test('test slider', async ({ page }) => {
     
   await page.mouse.move(limitesBoton.x + limitesBoton.width / 2, limitesBoton.y + limitesBoton.height / 2);
   await page.mouse.down();
-  await page.mouse.move(limitesBoton.x + (limitesSlider.width *11.11*(posicion-1))/100, limitesBoton.y + limitesBoton.height / 2);
+  await page.mouse.move(limitesBoton.x + (limitesSlider.width *21.21*(posicion-1))/100, limitesBoton.y + limitesBoton.height / 2);
   await page.mouse.up();
 });
