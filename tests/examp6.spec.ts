@@ -6,12 +6,8 @@ test('test slider', async ({ page }) => {
   
   const posicion = 8;
   const botonSlider = page.locator("//span");
-  const slider = page.locator("//div[@id='slider']");
   const limitesBoton = await botonSlider.boundingBox();
-  const limitesSlider = await slider.boundingBox();
     
   await page.mouse.move(limitesBoton.x + limitesBoton.width / 2, limitesBoton.y + limitesBoton.height / 2);
   await page.mouse.down();
-  await page.mouse.move(limitesBoton.x + (limitesSlider.width *11.11*(posicion-1))/100, limitesBoton.y + limitesBoton.height / 2);
-  await page.mouse.up();
 });
